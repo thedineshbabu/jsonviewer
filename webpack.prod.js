@@ -6,11 +6,11 @@ module.exports = {
   mode: "production",
   plugins: [
     new ModuleFederationPlugin({
-      name: "footer",
+      name: "jsonviewer",
       filename: "remoteEntry.js",
       remotes: {},
       exposes: {
-        "./Footer": "./src/components/Footer",
+        "./JSONViewer": "./src/App",
       },
     }),
     new HtmlWebPackPlugin({
