@@ -1,15 +1,25 @@
 import React, { useState } from "react";
 import ReactJson from "react-json-view";
 import { Button } from "@mui/material";
-import { Select } from "@mui/material";
+import ButtonGroup from "@mui/material/ButtonGroup";
 import "./JSONViewer.css";
 
 const JSONViewer = ({ jsonObject, handleBack }) => {
   const [theme, setTheme] = useState("monokai");
 
   return (
-    <div className="JSONViewer">
-      <div className="buttonContainer">
+    <div>
+      {/* <div className="btnContainer">
+        <ButtonGroup
+          variant="contained"
+          aria-label="outlined primary button group"
+        >
+          <Button>One</Button>
+          <Button>Two</Button>
+          <Button>Three</Button>
+        </ButtonGroup>
+      </div> */}
+      {/* <div className="buttonContainer">
         <Button
           variant="contained"
           color="primary"
@@ -42,7 +52,7 @@ const JSONViewer = ({ jsonObject, handleBack }) => {
         >
           Ocean
         </Button>
-      </div>
+      </div> */}
       <ReactJson src={JSON.parse(jsonObject)} theme={theme} />
       <Button
         variant="contained"

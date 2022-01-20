@@ -1,25 +1,7 @@
-.footerContainer {
-  background-color: #c5bcbc;
-  border-top: 1px solid #eaeaea;
-  padding: 20px;
-  text-align: center;
-}
-.buttonContainer {
-  margin-top: 20px;
-  text-align: center;
-}
-.buttonContainer button {
-  background-color: #4caf50;
-  border: none;
-  color: black;
-  padding: 15px 22px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
-  margin: 8px 2px;
-  cursor: pointer;
-}
-.buttonContainer button:hover {
-  background-color: #fff;
+.JSONViewer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 5% 5% 5% 5%;
 }
