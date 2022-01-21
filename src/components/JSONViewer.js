@@ -8,60 +8,36 @@ const JSONViewer = ({ jsonObject, handleBack }) => {
   const [theme, setTheme] = useState("monokai");
 
   return (
-    <div>
-      {/* <div className="btnContainer">
-        <ButtonGroup
-          variant="contained"
-          aria-label="outlined primary button group"
-        >
-          <Button>One</Button>
-          <Button>Two</Button>
-          <Button>Three</Button>
-        </ButtonGroup>
-      </div> */}
-      {/* <div className="buttonContainer">
+    <div className="JSONViewer">
+      <div className="commandCenter">
+        <div className="commandCenterOne_1">1</div>
+        <div className="commandCenterOne_2">2</div>
+        <div className="commandCenterOne_3">3</div>
+        <div className="commandCenterTwo_1">4</div>
+        <div className="commandCenterTwo_2">5</div>
+        <div className="commandCenterTwo_3">6</div>
+        <div className="commandCenterThree_1">7</div>
+        <div className="commandCenterThree_2">8</div>
+        <div className="commandCenterThree_3">9</div>
+      </div>
+      <div className="jsonContainer">
+        <ReactJson
+          src={JSON.parse(jsonObject)}
+          theme={theme}
+          style={{
+            width: "75%",
+            padding: "0% 5% 0% 0%",
+          }}
+        />
         <Button
           variant="contained"
           color="primary"
-          disabled={theme === "monokai"}
-          onClick={() => setTheme("monokai")}
+          style={{ marginTop: "10px" }}
+          onClick={handleBack}
         >
-          Monokai
+          Back
         </Button>
-        <Button
-          variant="contained"
-          color="primary"
-          disabled={theme === "tomorrow"}
-          onClick={() => setTheme("tomorrow")}
-        >
-          Tomorrow
-        </Button>
-        <Button
-          variant="contained"
-          color="primary"
-          disabled={theme === "summerfruit:inverted"}
-          onClick={() => setTheme("summerfruit:inverted")}
-        >
-          Plain
-        </Button>
-        <Button
-          variant="contained"
-          color="primary"
-          disabled={theme === "ocean"}
-          onClick={() => setTheme("ocean")}
-        >
-          Ocean
-        </Button>
-      </div> */}
-      <ReactJson src={JSON.parse(jsonObject)} theme={theme} />
-      <Button
-        variant="contained"
-        color="primary"
-        style={{ marginTop: "10px" }}
-        onClick={handleBack}
-      >
-        Back
-      </Button>
+      </div>
     </div>
   );
 };
