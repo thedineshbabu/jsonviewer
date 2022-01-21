@@ -19,7 +19,11 @@ const App = () => {
     <StyledEngineProvider injectFirst>
       <div className="App">
         {jsonObject && (
-          <JSONViewer jsonObject={jsonObject} handleBack={handleBack} />
+          <JSONViewer
+            jsonObject={jsonObject}
+            handleBack={handleBack}
+            handleJSONInput={handleJSONInput}
+          />
         )}
         {!jsonObject && <JSONInput handleJSONInput={handleJSONInput} />}
       </div>

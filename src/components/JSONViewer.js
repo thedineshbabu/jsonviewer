@@ -4,7 +4,7 @@ import { Button } from "@mui/material";
 import ButtonGroup from "@mui/material/ButtonGroup";
 import "./JSONViewer.css";
 
-const JSONViewer = ({ jsonObject, handleBack }) => {
+const JSONViewer = ({ jsonObject, handleBack, handleJSONInput }) => {
   const [theme, setTheme] = useState("monokai");
 
   return (
@@ -24,6 +24,10 @@ const JSONViewer = ({ jsonObject, handleBack }) => {
         <ReactJson
           src={JSON.parse(jsonObject)}
           theme={theme}
+          onEdit={(e) => {}}
+          onAdd={(e) => {}}
+          onDelete={(e) => {}}
+          onSelect={(e) => {}}
           style={{
             width: "75%",
             padding: "0% 5% 0% 0%",
