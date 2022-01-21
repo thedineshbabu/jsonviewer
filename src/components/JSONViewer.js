@@ -9,7 +9,7 @@ const JSONViewer = ({ jsonObject, handleBack }) => {
 
   return (
     <div className="JSONViewer">
-      <div className="commandCenter">
+      {/* <div className="commandCenter">
         <div className="commandCenterOne_1">1</div>
         <div className="commandCenterOne_2">2</div>
         <div className="commandCenterOne_3">3</div>
@@ -19,7 +19,7 @@ const JSONViewer = ({ jsonObject, handleBack }) => {
         <div className="commandCenterThree_1">7</div>
         <div className="commandCenterThree_2">8</div>
         <div className="commandCenterThree_3">9</div>
-      </div>
+      </div> */}
       <div className="jsonContainer">
         <ReactJson
           src={JSON.parse(jsonObject)}
