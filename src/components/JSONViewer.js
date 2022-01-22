@@ -28,6 +28,9 @@ const JSONViewer = ({ jsonObject, handleBack, handleJSONInput }) => {
           onAdd={(e) => {}}
           onDelete={(e) => {}}
           onSelect={(e) => {}}
+          displayDataTypes={false}
+          displayObjectSize={false}
+          quotesOnKeys={false}
           style={{
             width: "75%",
             padding: "0% 5% 0% 0%",
